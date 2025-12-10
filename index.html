@@ -3,202 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>final</title>
+    <title>Plugy EV - Electric Vehicle Charging Solutions</title>
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
+    <!-- Header with Logo and Navigation -->
     <header>
-        <img src="3.png" alt="Menu" id = "img1"> 
-        <nav class = "navbar">
+        <img src="3.png" alt="Plugy EV Logo" id="img1"> 
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="navbar">
             <ul>
-                <li> <a href="">Home</a></li>
-                <li> <a href="">Products</a></li>
-                <li> <a href="">Blog</a></li>
-                <li> <a href="">About</a></li>
-                <li> <a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-     <div class="back">
-      <div class="sec1">
-        <h1 class="hero-title">
-          <span>Powering Egypt's</span>
-          <span class="green1">Electric</span>
-          <span class="green2">Future</span>
-        </h1>
-        <p class="description">Simple, reliable, and accessible EV charging solutions with full local support and warranty.</p>
-        <div class="buttons">
-          <button class="btn-primary">Explore Products</button>
-          <button class="btn-secondary">Learn More</button>
+    <!-- Hero Section -->
+    <div class="back" id="home">
+        <div class="sec1">
+            <h1 class="hero-title">
+                <span>Powering Egypt's</span>
+                <span class="green1">Electric</span>
+                <span class="green2">Future</span>
+            </h1>
+            <p class="description">Simple, reliable, and accessible EV charging solutions with full local support and warranty.</p>
+            <div class="buttons">
+                <button class="btn-primary">Explore Products</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
         </div>
-      </div>
     </div>
 
+    <!-- Features Section -->
     <section class="sec2">
-      <div class="container">
-        <h2 class="title">Why Choose Plugy EV?</h2>
-        <p class="text1">We provide high-quality EV charging solutions designed specifically for the Egyptian market with full local support.</p>
-        <div class="features">
-          <div class="box">
-            <h3>Fast & Reliable Charging</h3>
-            <p>Our chargers deliver optimal performance with advanced safety features for peace of mind.</p>
-          </div>
-          <div class="box">
-            <h3>Local Support & Warranty</h3>
-            <p>Full Egyptian-based customer support and warranty services for all our products.</p>
-          </div>
-          <div class="box">
-            <h3>Sustainable Future</h3>
-            <p>Join Egypt's transition to clean energy with our eco-friendly charging solutions.</p>
-          </div>
+        <div class="container">
+            <h2 class="title">Why Choose Plugy EV?</h2>
+            <p class="text1">We provide high-quality EV charging solutions designed specifically for the Egyptian market with full local support.</p>
+            <div class="features">
+                <div class="box">
+                    <h3>Fast & Reliable Charging</h3>
+                    <p>Our chargers deliver optimal performance with advanced safety features for peace of mind.</p>
+                </div>
+                <div class="box">
+                    <h3>Local Support & Warranty</h3>
+                    <p>Full Egyptian-based customer support and warranty services for all our products.</p>
+                </div>
+                <div class="box">
+                    <h3>Sustainable Future</h3>
+                    <p>Join Egypt's transition to clean energy with our eco-friendly charging solutions.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="sec3">
-      <div class="container">
-        <h2 class="secTitle">Ready to Power Your EV Journey?</h2>
-        <p class="secText">Join Egypt's electric future with Plugy EV charging solutions. Get in touch with our team today.</p>
-        <div class="buttons">
-          <button class="button1">Contact Us</button>
-          <button class="button2">Browse Products</button>
+        <div class="container">
+            <h2 class="secTitle">Ready to Power Your EV Journey?</h2>
+            <p class="secText">Join Egypt's electric future with Plugy EV charging solutions. Get in touch with our team today.</p>
+            <div class="buttons">
+                <button class="button1">Contact Us</button>
+                <button class="button2">Browse Products</button>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="sec4">
-      <div class="container">
-        <h2 class="section-title">Our Products</h2>
-        <p class="section-subtitle">High-quality EV chargers and accessories designed for the Egyptian market.</p>
-        <div class="products-grid">
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
+    <!-- Products Section -->
+    <section class="sec4" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">High-quality EV chargers and accessories designed for the Egyptian market.</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #1" class="product-image">
+                    <h3>Plugy Home Charger</h3>
+                    <p class="product-price">$199</p>
+                    <p class="product-description">Fast home charging solution with smart features and safety protection.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #2" class="product-image">
+                    <h3>Plugy Portable Charger</h3>
+                    <p class="product-price">$249</p>
+                    <p class="product-description">Portable EV charger for on-the-go charging with compact design.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #3" class="product-image">
+                    <h3>Plugy Fast Charger</h3>
+                    <p class="product-price">$399</p>
+                    <p class="product-description">Commercial-grade fast charger for businesses and public stations.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #4" class="product-image">
+                    <h3>Plugy Wall Mount</h3>
+                    <p class="product-price">$149</p>
+                    <p class="product-description">Wall-mounted charging station with cable management system.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #5" class="product-image">
+                    <h3>Plugy Smart Charger</h3>
+                    <p class="product-price">$299</p>
+                    <p class="product-description">WiFi-enabled smart charger with app control and scheduling.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="1.jpg" alt="Plugy Charger #6" class="product-image">
+                    <h3>Plugy Cable Kit</h3>
+                    <p class="product-price">$89</p>
+                    <p class="product-description">High-quality charging cables with different connector options.</p>
+                    <div class="product-actions">
+                        <button class="addToCart">Add to Cart</button>
+                        <div class="quantity">1</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
-            </div>
-          </div>
-          <div class="product-card">
-            <img src="1.jpg" alt="" class="product-image">
-            <h3>Plugy Charger #1</h3>
-            <p class="product-price">$199</p>
-            <p class="product-description">High-quality EV charger with fast performance.</p>
-            <div class="product-actions">
-              <button class="addToCart">Add to Cart</button>
-              <div class="quantity">1</div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="blog-section">
-      <div class="container">
-        <h2 class="section-title">From Our Blog</h2>
-        <p class="section-subtitle">Stay updated with the latest EV trends, tips, and news in Egypt.</p>
-        <div class="blog-grid">
-          <div class="blog-card">
-            <div class="blog-category">EV Charging Solutions</div>
-            <h3>Top 5 EV Charging Solutions in Egypt for 2025</h3>
-            <p>Discover the best EV charging options available in Egypt as we move toward a sustainable future.</p>
-            <a href="#" class="blog-link">Read More</a>
-          </div>
-          <div class="blog-card">
-            <div class="blog-category">EV Adoption</div>
-            <h3>The Rise of Electric Vehicles in Egypt</h3>
-            <p>What you need to know about the growing EV market and infrastructure in Egypt.</p>
-            <a href="#" class="blog-link">Read More</a>
-          </div>
+    <!-- Blog Section -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">From Our Blog</h2>
+            <p class="section-subtitle">Stay updated with the latest EV trends, tips, and news in Egypt.</p>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-category">EV Charging Solutions</div>
+                    <h3>Top 5 EV Charging Solutions in Egypt for 2025</h3>
+                    <p>Discover the best EV charging options available in Egypt as we move toward a sustainable future.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-category">EV Adoption</div>
+                    <h3>The Rise of Electric Vehicles in Egypt</h3>
+                    <p>What you need to know about the growing EV market and infrastructure in Egypt.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-category">Maintenance Tips</div>
+                    <h3>How to Maintain Your EV Charger for Longevity</h3>
+                    <p>Essential maintenance tips to keep your EV charger working efficiently for years.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-footer">
+                <a href="#" class="blog-link">View All Blog Posts</a>
+            </div>
         </div>
-        <div class="blog-footer">
-          <a href="#" class="blog-link">View All Blog Posts</a>
-        </div>
-      </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Powering Egypt's electric future with reliable, accessible EV charging solutions.</h4>
-          </div>
-          <div class="footer-section">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">About Us</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h5>Products</h5>
-            <ul>
-              <li><a href="">Home Chargers</a></li>
-              <li><a href="">Portable Chargers</a></li>
-              <li><a href="">Accessories</a></li>
-              <li><a href="">Support</a></li>
-            </ul>
-          </div>
-          <div class="footer-section contact-section">
-            <h5>Contact Us</h5>
-            <ul>
-              <li>Cairo, Egypt</li>
-              <li>+20 123 456 7890</li>
-              <li>info@plugyev.com</li>
-            </ul>
-          </div>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Powering Egypt's electric future with reliable, accessible EV charging solutions.</h4>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#products">Home Chargers</a></li>
+                        <li><a href="#products">Portable Chargers</a></li>
+                        <li><a href="#products">Accessories</a></li>
+                        <li><a href="#products">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-section">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li>Cairo, Egypt</li>
+                        <li>+20 123 456 7890</li>
+                        <li>info@plugyev.com</li>
+                        <li>Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Plugy EV. All rights reserved.</p>
+            </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Gangrow. All rights reserved.</p>
-        </div>
-      </div>
     </footer>
 
-    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navbar = document.querySelector('.navbar');
+            const body = document.body;
+            
+            if (mobileMenuToggle && navbar) {
+                mobileMenuToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    mobileMenuToggle.classList.toggle('active');
+                    navbar.classList.toggle('active');
+                    body.classList.toggle('menu-open');
+                });
+                
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.navbar a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!navbar.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                        mobileMenuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    }
+                });
+                
+                // Close menu with Escape key
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'Escape') {
+                        mobileMenuToggle.classList.remove('active');
+                        navbar.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    }
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add to Cart functionality
+            const addToCartButtons = document.querySelectorAll('.addToCart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.product-card').querySelector('h3').textContent;
+                    const productPrice = this.closest('.product-card').querySelector('.product-price').textContent;
+                    
+                    // Show alert (you can replace this with actual cart functionality)
+                    alert(`Added to cart:\n${productName}\n${productPrice}`);
+                    
+                    // Add animation effect
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 200);
+                });
+            });
+            
+            // Button hover effects
+            const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .button1, .button2, .addToCart');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
