@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <!-- Header with Logo and Navigation -->
     <header>
         <img src="3.png" alt="Plugy EV Logo" id="img1"> 
-        <!-- Mobile Menu Button -->
         <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
@@ -27,7 +25,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <div class="back" id="home">
         <div class="sec1">
             <h1 class="hero-title">
@@ -43,7 +40,6 @@
         </div>
     </div>
 
-    <!-- Features Section -->
     <section class="sec2">
         <div class="container">
             <h2 class="title">Why Choose Plugy EV?</h2>
@@ -65,7 +61,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="sec3">
         <div class="container">
             <h2 class="secTitle">Ready to Power Your EV Journey?</h2>
@@ -77,7 +72,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section class="sec4" id="products">
         <div class="container">
             <h2 class="section-title">Our Products</h2>
@@ -147,7 +141,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section class="blog-section" id="blog">
         <div class="container">
             <h2 class="section-title">From Our Blog</h2>
@@ -178,7 +171,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
@@ -219,9 +211,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
             const navbar = document.querySelector('.navbar');
@@ -245,7 +235,6 @@
                     });
                 });
                 
-                // Close menu when clicking outside
                 document.addEventListener('click', function(event) {
                     if (!navbar.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
                         mobileMenuToggle.classList.remove('active');
@@ -254,7 +243,6 @@
                     }
                 });
                 
-                // Close menu with Escape key
                 document.addEventListener('keydown', function(event) {
                     if (event.key === 'Escape') {
                         mobileMenuToggle.classList.remove('active');
@@ -264,7 +252,6 @@
                 });
             }
             
-            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -281,17 +268,14 @@
                 });
             });
             
-            // Add to Cart functionality
             const addToCartButtons = document.querySelectorAll('.addToCart');
             addToCartButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const productName = this.closest('.product-card').querySelector('h3').textContent;
                     const productPrice = this.closest('.product-card').querySelector('.product-price').textContent;
                     
-                    // Show alert (you can replace this with actual cart functionality)
                     alert(`Added to cart:\n${productName}\n${productPrice}`);
                     
-                    // Add animation effect
                     this.style.transform = 'scale(0.95)';
                     setTimeout(() => {
                         this.style.transform = 'scale(1)';
@@ -299,7 +283,6 @@
                 });
             });
             
-            // Button hover effects
             const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .button1, .button2, .addToCart');
             buttons.forEach(button => {
                 button.addEventListener('mouseenter', function() {
@@ -314,3 +297,4 @@
     </script>
 </body>
 </html>
+
