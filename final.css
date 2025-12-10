@@ -446,6 +446,10 @@ header {
     background-color: #f8f9fa;
 }
 
+.container{
+    margin: 0 auto;
+}
+
 .blog-section .section-title {
     font-size: 28px;
     color: #191c2d;
